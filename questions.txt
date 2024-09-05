@@ -1,0 +1,98 @@
+Singleton class
+Immutable class
+Covariant and access specifier base overriding
+hash code and equals method
+how set and map internally works
+Actuator
+Set two database in spring boot
+
+second highest salary of an employee sql query ?
+SELECT * FROM employee 
+WHERE salary= (SELECT DISTINCT(salary) 
+FROM employee ORDER BY salary DESC LIMIT n-1,1);
+
+Can we overload and override main method
+What is spring pool
+Callable and runnable interface
+Concurrent hashMap and hashtable
+hibernate get and load method
+Most obvious method call in method overloading 
+
+closable interface (try with resources)
+design pattern
+bean lifecycle
+HashCode and equals contract
+double check lock
+m1(Object obj), m1(String str)
+intern() method
+deadblock
+
+
+Second highest salary of an employee usinng stream (MAP or list based)
+@Transactional annotation
+How Treeset maintains order 
+
+Functional interface
+static and private method inside interface
+exception hierarchy in parent child class scnario 
+wait and sleep method difference 
+Java 8 features 
+Difference between HashTable and HashMap
+
+Overriding tricky questions, with exception level in overriding 
+Can treeset contain Student type object ?
+
+
+between fail-safe iterators and fail-fast iterators
+lifecycle of bean in spring
+
+
+String parenthesis using STack
+
+How to create builder design pattern
+Supplier and Function example
+
+       int arr[] = {14,19,4,3,6,2} ;
+      //  o/p: b[] = {19,6,6,6,2,-1}
+
+Swap two string, variable without using 3rd variable 
+Parenthesis problem using stack 
+
+Difference between Rest web services and soap web services 
+
+Dependency injection ways ?
+
+Difference between ApplicationCOnext and Beanfactory 
+Ans : BeanFactory loads beans on-demand, while ApplicationContext loads all beans at startup
+
+Difference between @COntroller and @RestController annotation 
+
+Profiles in Spring Boot
+
+Arrays.asList(10,15,29,32,4,6546,98)
+Output : 10,15 using java 8
+
+Difference between for loop and iterator 
+How to configure 2 databse in spring boot application 
+
+Fail fast and fail safe, concurrentModification exception 
+Injecting prototype beans into singleton class 
+
+
+Swap two numbers without using 3rd variable
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
