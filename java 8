@@ -1,0 +1,121 @@
+1. Given a list of integers, separate odd and even numbers
+
+	List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+        List<Integer> even = list.stream()
+                .filter(integer -> integer % 2 == 0)
+                .collect(Collectors.toList());
+
+        System.out.println(even);
+        List<Integer> odd = list.stream()
+                .filter(integer -> integer % 2 != 0).collect(Collectors.toList());
+
+        Map<Boolean, List<Integer>> evenOddNumbersMap = list.stream().collect(Collectors.partitioningBy(integer -> integer % 2 == 0));
+        System.out.println(evenOddNumbersMap);
+
+2. find frequency of each character in a string using Java 8 streams
+		 Map<Character, Long> map = str.chars()
+                .mapToObj(value -> (char) value)
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+
+3. Sort the list in the reverse order
+	List<Integer> list = Arrays.asList(10, 12, 11, 8, 7, 6, 4, 33, 55);
+
+    List<Integer> collect = list.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+
+
+4. Multiple of 5
+	list.stream().filter(num -> num % 5 == 0).forEach(System.out::println);
+
+
+5. 	Merge two unsorted array into single array
+		int arr1[] = {1, 4, 3, 5, 7, 5, 3, 5};
+        int arr2[] = {1, 5, 6, 2, 3, 44, 6};
+        int[] resultArray = IntStream.concat(Arrays.stream(arr1), Arrays.stream(arr2)).toArray();
+
+6. Merge two unsorted array into single sorted array without duplicates
+		int arr1[] = {1, 4, 3, 5, 7, 5, 3, 5};
+        int arr2[] = {1, 5, 6, 2, 3, 44, 6};
+        int[] resultArray = IntStream.concat(Arrays.stream(arr1), Arrays.stream(arr2)).sorted().distinct().toArray();
+
+
+7. Find repeatable character in a string 
+		String str = "this is the string ";
+        
+        List<Character> collect = str.chars()
+                .mapToObj(value -> (char) value)
+                .filter(character -> !Character.isWhitespace(character))
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()))
+                .entrySet()
+                .stream()
+                .filter(entry -> entry.getValue() > 1)
+                .map(Map.Entry::getKey)
+                .collect(Collectors.toList());
+
+        System.out.println(collect);
+
+ 8. Character and their frequency
+ 	 String str = "this is the string ";
+
+        Map<Character, Long> map = str.chars()
+                .mapToObj(value -> (char) value)
+                .filter(character -> !Character.isWhitespace(character))
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+        System.out.println(map);
+
+9. First non repeatable character from a string 
+
+	 String str = "this is the string ";
+
+        Character nonRepeating = str.chars()
+                .mapToObj(value -> (char) value)
+                .filter(character -> !Character.isWhitespace(character))
+                .collect(Collectors.groupingBy(Function.identity(), LinkedHashMap::new, Collectors.counting()))
+                .entrySet()
+                .stream().filter(entry -> entry.getValue() == 1)
+                .map(Map.Entry::getKey)
+                .findFirst().get();
+
+        System.out.println(nonRepeating);
+
+10. Second highest number
+List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 88, 8, 99, 99);
+
+        Integer integer = list.stream()
+                .sorted(Comparator.reverseOrder()).distinct().skip(1).limit(1).findFirst().get();
+        System.out.println(integer);
+
+11. Longest string from given array
+		List<String> stringList = Arrays.asList("Tanish", "Jay", "Vijay", "Ravindra");
+
+        String s = stringList.stream().sorted(Comparator.comparing(String::length).reversed()).findFirst().get();
+        System.out.println(s);
+        		or
+        Optional<String> longestString = stringList.stream().reduce((s1, s2) -> s1.length() > s2.length() ? s1 : s2);
+        System.out.println(longestString.get());
+
+
+12. Find all elements who starts with 1
+		List<Integer> list = Arrays.asList(11, 22, 33, 12, 14);
+
+        List<String> resultList = list.stream()
+                .map(integer -> integer + "")
+                .filter(s -> s.charAt(0) == '1')
+                .collect(Collectors.toList());
+
+        System.out.println(resultList);
+
+
+13.  Completable future 
+
+
+
+
+Different generation type strategy 
+Difference between @AllArgsConstructor and @RequiredArgsConstructor
+
+
+
+Kafka is a event straming platform 
