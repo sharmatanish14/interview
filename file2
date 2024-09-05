@@ -1,0 +1,54 @@
+Kafka is a event straming platform 
+
+Consumer groups are used for scalable message consumption 
+
+Imp classes to check 
+KafkaAutoConfiguration
+KafkaProperties
+
+Manual consumr offset management 
+
+
+
+docker-compose if filename up
+run the application it will create topic witn name library-events 
+
+
+
+
+
+
+javax to jakarta
+var keyword
+Records
+Sealed classes
+Multi line text block 
+instance of operator  
+Multiline text block  """     """
+switch expression
+
+
+******** Spring boot 3 **********
+
+Java 17 
+GraalVM : Significant memory and startup performance
+Spring security filter chain 
+RestClient and Http interfaces
+SPring Data JPA
+Observability : It is the ability to observe the internal state of the running system, it consist three pillars logging, metrics and traces 
+
+
+circular references
+path matchers			/path/{name}/{name}
+server.error.include=always
+spring-boot-properties-migrator
+
+
+
+kafka-console-consumer --bootstrap-server kafka1:19092 --topic library-events.DLT --property "print.headers=true" --property "print.timestamp=true" 
+
+
+
+
+
+
