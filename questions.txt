@@ -89,6 +89,7 @@ Difference between Future and CompletableFuture
 Hibernate ACID properties
 Association, aggregation and composition 
 
+finalyse method is deprecated and Cleaner class is introduced
 
 
 
