@@ -81,6 +81,13 @@ Injecting prototype beans into singleton class
 
 Swap two numbers without using 3rd variable
 
+Executor service, submit and execute method
+Saga and orchestator pattern
+Caching in hibernate
+How @Transaction annotation work behind th scenes
+Difference between Future and CompletableFuture
+Hibernate ACID properties
+Association, aggregation and composition 
 
 
 
