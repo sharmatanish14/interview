@@ -1,0 +1,63 @@
+Intro? Tech stack? Role? current project and architecture?
+explain the difference between the interface and abstraction? how do you create a object in abstract class and interface?
+String s1 = “abc” and String s2 = new String (“abc”) – What is the difference?
+What is string immutable? Why is string immutable by default?
+if you want to create a sting class as immutable, How do you make it?
+Question: Count the number of characters in the below string.. Use Java 8.
+
+What is the Java 8 features you have worked on?
+Question: First, convert this string into Streams. Then combine two streams into one.
+
+Can you explain the exception hierarchy ​or how do you handle your exception in your Java code?
+What is the Super class of exception?
+How do you create your own exception? Custom one?
+have you used SOLID principles in your project? Explain with examples.
+What is Spring Core?
+What is IOC in Spring? Do you know the types of IOC containers?  how do you create IOC?
+what is serialization? Why is serializable interface required?
+How do you create your pojo class and model classes in your application? Do you use any framework?
+Which DS are you familiar with?
+Difference between hashmap and hashset?
+hash table is synchronised?
+Linkedlist vs arraylist? what is the complexity of this arraylist and linked list? When to use what?
+if you want to use natural sorting, which algorithm you will go with? which data structure you will prefer?
+Can you explain me the internal working of hashmap? How hashcode and that content will be verified?
+if you want to go with the thread safety, how do you make that hashmap thread safe?
+Internal working of concurrent hashmap?
+what is a failfast and failsafe iterators?
+What are generics in Java? Why do we use them?
+What are predicate and bipredicate? When do you use them? Write the pseudo code.
+What is Optional class? Why do we use them?
+Which design patterns have you worked on?
+Write a Singleton class. Make it thread safe. And it should not be broken using reflection, serializable and cloneable.
+Worked on multithreading? What is Executor framework?
+How do you create a pool using Executor framework? How do you create it threads using executive framework? How do you use it? What is the purpose of that?
+Have you used future and completablefuture?
+What is thread local? Blocking queue? Countdown latch? Cyclic Barrier?
+which messaging service you used? What are different components of Kafka?
+How do you handle error mechanism in Kafka? For example, you want to apply some of the retry mechanism or error handling. How do you do that? Any design patterns you are using?
+What is JPA? How do you connect to DB? Which properties you are sending?
+How do you create a springboot application? What are the steps you will take? How do you inject this DB there?
+have you used indexing?​
+Can you write one query – you have a student and department table? Create your own columns. Combine these 2 tables using left join.
+Write a query to find the second highest marks in the student table.
+What is relationships in JPA?
+How do you handle garbage collection in Java? Ang GC algos you know? Like Marck and Sweep, G1GC? Any profiling tool you have used? Any idea about heap dump? How will you take care of out of memory error?
+Explain your current project architecture? If you want to create a sequence diagram, how do you create it?
+How do you do your deployment of your application? What is the Ci/CD process? which platform you are using?
+Have you worked on any UI framework?
+are you a part of bug fixing or production release? Blue Green /Canary release?
+Which testing framework? For example, if you want to mock something, how do you process? Can you give some steps? What is inject mock?
+Any monitoring tools you are using?
+API availability is down. How do you rectify it? How do you check the health of your APIs?
+Any code quality tool?
+what are rest principle? Rest best practices?
+How do you do exception handling in your Rest?
+How is the service to service communication happening in your microservices?
+How do you handle your local transaction?
+Can you tell me the repository wise how do you integrate into DB?​
+Which cloud services?
+How are you securing your APIs? JWT – What is the structure?
+How are you doing API testing? Any tool? How do you call your postman API using auth?
+Any API Gateway? Roles and responsibilities? Rate limiting?
+How do you handle your caching in your application? Any distributed cache you have worked on?
